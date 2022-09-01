@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Cart from "./components/Cart";
+import Details from "./components/Details";
+import { TrackerProvider } from "./contexts/tracker";
 
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TrackerProvider>
+      <div className="mx-auto justify-between h-screen p-64">
+        <div className="flex flex-col md:flex-row gap-6">
+          <Cart/>
+          <Details/>
+        </div>
+       </div>
+    </TrackerProvider>
   );
 }
 

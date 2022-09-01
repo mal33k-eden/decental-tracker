@@ -8,7 +8,7 @@ const app = express();
 app.use(function (req, res, next) {
 
     // frontend
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3002');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
     // methods allowed
     res.setHeader('Access-Control-Allow-Methods', 'GET');
