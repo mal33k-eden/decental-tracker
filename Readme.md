@@ -1,4 +1,4 @@
-# Decentraland Test
+# Decentral Test
 
 Tools Used 
 -  React Js 
